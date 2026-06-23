@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "LeetSync",
+  "version": "1.0",
+  "description": "LeetCode Solution Tracker",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": ["activeTab", "storage"],
+
+  "host_permissions": [
+    "https://leetcode.com/*",
+    "https://api.github.com/*",
+    "https://generativelanguage.googleapis.com/*"
+
+  ],
+
+
+  "content_scripts": [
+  {
+    "matches": ["https://leetcode.com/*"],
+    "js": ["content.js"]
+  }
+]
+}
+
