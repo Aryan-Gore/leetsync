@@ -24,7 +24,7 @@ ${problemData.explanation}
 
 ## Solution File
 
-Solution.${getExtension(problemData.language)}
+[Solution.${extension}](./Solution.${extension})
 `;
 }
 
